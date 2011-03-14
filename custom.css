@@ -7,4 +7,5 @@
 code {font-size: .6em;}
 
 .left ul li {text-align: left;}
+.left h2, .left h1, .left h3 {text-align: left;}
 li code {font-size: .5em;}
