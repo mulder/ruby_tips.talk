@@ -1,0 +1,10 @@
+.title_slide .name {position: absolute; bottom: 50px; right: 10px; font-size: 1.8em; color: #666;}
+.title_slide .twitter {position: absolute; bottom: 30px; right: 10px; font-size: 1.2em; color: #666;}
+.title_slide .trb {position: absolute; top: 10px; left: 10px; font-size: 1.8em; color: #666;}
+
+.title_slide .connect_notes {position: absolute; bottom: 40px; left: 10px; font-size: 1.3em; color: #666;}
+
+code {font-size: .6em;}
+
+.left ul li {text-align: left;}
+li code {font-size: .5em;}

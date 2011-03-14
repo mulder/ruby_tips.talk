@@ -1,0 +1,6 @@
+{ "name": "10 Things Every Ruby Programmer Should Know", 
+  "sections": [ 
+    {"section":"opening"},
+    {"section":"tips"},
+    {"section":"closing"}
+  ]}
