@@ -12,6 +12,8 @@ h3. def foo(&block) vs def foo then using Proc.new.call and block_given?
 
 h3. *_eval(&block) *_eval(&Proc.new) 
 
+
+
 h3. foo and return... good until foo happens to be false/nil... try begin / end or tapping; its a gateway drug... 
 
 i.e. session[:report] = nil and redirect_to([:reports, @challenge, @competition]) if params[:reset] == 'true'
