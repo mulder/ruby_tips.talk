@@ -7,30 +7,6 @@
 ## STDLIB Benchmark Usage ##
 
 	@@@ ruby
-	require 'benchmark'
-	
-	Benchmark.bm do
-		bm.report { ... }
-	end
-	
-!SLIDE
-
-## Compare symbol2proc vs standard block ##
-
-	@@@ ruby
-	
-	(1..10).to_a.map {|i| i.to_s }
-	
-## vs ##
-
-	@@@ ruby
-	(1..10).to_a.map(&:to_s)
-
-
-!SLIDE
-
-## Benchmark block ##
-	@@@ ruby
 
 	require 'benchmark'
 
@@ -70,6 +46,20 @@
 			end
 		end
 	end
+
+	
+!SLIDE
+
+## Compare symbol2proc vs standard block ##
+
+	@@@ ruby
+	
+	(1..10).to_a.map {|i| i.to_s }
+	
+## vs ##
+
+	@@@ ruby
+	(1..10).to_a.map(&:to_s)
 
 	
 	

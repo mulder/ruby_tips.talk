@@ -21,4 +21,4 @@
 
 # Thanks to our sponsors! #
 
-![Sponsors](sponsors.jpg)
+![Sponsors](sponsors.png)

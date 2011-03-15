@@ -2,13 +2,9 @@
 # 4 #
 ## to_i ##
 
-!SLIDE
-
-## 	params[:number].to_i ##
-
 !SLIDE bullets incremental left
-## '5'.to_i ##
-* => 5
+## '4'.to_i ##
+* => 4
 	
 !SLIDE	bullets incremental left
 ## '-100'.to_i ##
