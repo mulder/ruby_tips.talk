@@ -4,6 +4,8 @@
 
 !SLIDE 
 
+## Consider this method on some AR like class ##
+
 	@@@ ruby
 	
 	def sort(column, direction = :desc)
@@ -12,29 +14,33 @@
 	
 !SLIDE
 
-	@@@ ruby
-	
-	def index
-		@models = ModelClass.sort(:name)          # order('name desc')
-		@models = ModelClass.sort(:name, :asc)    # order('name asc')
-	end
-	
-!SLIDE
 
 	@@@ ruby
 	
 	def index
-		@models = ModelClass.sort(params[:column], params[:direction])
+		@models = Model.sort(:name)          # order('name desc')
+		@models = Model.sort(:name, :asc)    # order('name asc')
+	end
+	
+!SLIDE
+
+
+	@@@ ruby
+	
+	def index
+		@models = Model.sort(params[:column], params[:direction])
 	end
 	
 !SLIDE bullets incremental left
 
-## /model_class/index?column=name&direction=asc ##
+## index?column=name&direction=asc ##
 * 		=> order('name asc')
-* /model_class/index?column=name
+* index?column=name
 * 		=> order('name ')
 
 !SLIDE
+
+
 	@@@ ruby
 
 	def sort(column, direction = :desc)

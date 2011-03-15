@@ -1,12 +1,12 @@
 !SLIDE bullets
 # 7 #
-## Hash Default ##
+## Hash Default Values##
 
 !SLIDE
 
 	@@@ ruby
 	
-	h = Hash.new
+	h = {}
 	
 	h[:a] += 1
 	=> NoMethodError: undefined method `+' for nil:NilClass
@@ -25,6 +25,9 @@
 	
 	h[:b] += 1
 	=> 1
+	
+	>> h
+	=> {:a=>2, :b=>1}
 
 !SLIDE
 
@@ -43,16 +46,20 @@
 	@@@ ruby
 
 	h[:b] << 1
-	=> [1, 2, 1] # ??
+	=> [1, 2, 1] # ?
 	
 	h[:a]
 	=> [1, 2, 1] # ??
 	
 	h[:a].object_id == h[:b].object_id
-	=> true  #???
+	=> true  # ???
 	
 	h[:foo].object_id == h[:bar].object_id
-	=> true
+	=> true # ????
+	
+	>> h
+	=> {} # ?????
+	
 	
 !SLIDE
 
@@ -66,5 +73,19 @@
 	h[:b] << 1
 	=> [1]
 	
+	>> h
+	=> {:a=>[1], :b=>[1]}
+	
 	h[:a].object_id == h[:b].object_id
 	=> false  # Yay!
+	
+	
+!SLIDE
+
+	@@@ ruby
+	
+	Hash.new(0) == Hash.new {0}
+	
+	# vs
+	
+	Hash.new {|h,k| h[k] = 0}

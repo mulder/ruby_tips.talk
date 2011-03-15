@@ -3,7 +3,7 @@
 ## public, protected & private ##
 
 !SLIDE
-# Explicit vs Implicit method calls
+## Explicit vs Implicit method calls ##
 	@@@ ruby
 
 	class Foo

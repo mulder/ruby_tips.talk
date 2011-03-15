@@ -25,6 +25,52 @@
 
 	@@@ ruby
 	(1..10).to_a.map(&:to_s)
+
+
+!SLIDE
+
+## Benchmark block ##
+	@@@ ruby
+
+	require 'benchmark'
+
+	Benchmark.bm do |x|
+	  # Benchmark magic here...
+	end
+
+
+!SLIDE
+
+## Benchmark block ##
+	@@@ ruby
+
+	require 'benchmark'
+	
+	title_offset = 20 
+
+	Benchmark.bm(title_offset) do |x|
+	  x.report('Title of your report') do
+			# Thing you want to benchmark
+		end
+	end
+
+!SLIDE
+
+## Benchmark many times for better results! ##
+	@@@ ruby
+
+	require 'benchmark'
+	
+	title_offset = 20 
+
+	Benchmark.bm(title_offset) do |x|
+	  x.report('Title of your report') do
+			1000.times do
+				# Thing you want to benchmark
+			end
+		end
+	end
+
 	
 	
 !SLIDE

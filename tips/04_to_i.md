@@ -41,3 +41,4 @@
 !SLIDE	bullets incremental left
 ## nil.to_i ##
 * => 0
+* Remember params[:number].to_i will be 0 on nil

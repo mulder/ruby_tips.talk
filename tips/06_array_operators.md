@@ -51,7 +51,8 @@
 		except = Array(options[:except])
 
 		columns = ((default_columns | with) - except) & valid_columns
-		# columns = [:name, :number, :date]
+		#  when options = {:with => [:date, :sin_number], :except => :status}
+		#  then columns = [:name, :number, :date]
 
 		build!(data_source, columns)
 	end

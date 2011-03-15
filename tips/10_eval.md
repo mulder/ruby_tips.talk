@@ -15,7 +15,7 @@
 	class Magic
 
 		def self.dsl(*args)
-			# Proc.new(self.new) if block_given?  # Old version
+			# Proc.new.call(self.new) if block_given?  # Old version
 
 			# ....
 			self.new.instance_eval(&Proc.new) if block_given?
