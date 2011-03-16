@@ -191,7 +191,7 @@ function showSlide(back_step) {
 		$('#preso').css({'width' : '100%', 'overflow' : 'visible'});
 		currentSlide.css({'width' : '100%', 'text-align' : 'center', 'overflow' : 'visible'});
 	} else {
-		$('#preso').css({'width' : '1450px', 'overflow' : 'hidden'});
+		$('#preso').css({'width' : '1020px', 'overflow' : 'hidden'});
 	}
 
 	percent = getSlidePercent()
@@ -575,7 +575,7 @@ function nextPreShowImage() {
 
 	$("#preso").empty()
 	tmpImg = preshow_images.eq(preshow_current).clone()
-	$(tmpImg).attr('width', '1450')
+	$(tmpImg).attr('width', '1020')
 	$("#preso").html(tmpImg)
 }
 
